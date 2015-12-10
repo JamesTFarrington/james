@@ -30,10 +30,11 @@
           [:span.icon-bar]
           [:span.icon-bar]
           [:span.icon-bar]]
-         [:a.navbar-brand {:href "#/"} "james"]]
+         [:a.navbar-brand {:href "#/"} "James"]]
         [:div.navbar-collapse.collapse
          (when-not @collapsed? {:class "in"})
          [:ul.nav.navbar-nav
+          [:a.navbar-brand {:href "http://jamestfarrington.github.com"} "Blog"]
           [nav-link "#/" "Home" :home collapsed?]
           [nav-link "#/about" "About" :about collapsed?]
           [nav-link "#/cookbook" "Cookbook" :cookbook collapsed?]
@@ -48,7 +49,23 @@
 (defn cookbook-page []
   [:div.container
   [:div.row.hidden-xs
-   [:img.img-rounded.center-block {:src "/img/4js.jpg"}]]])
+   [:img.img-rounded.center-block {:src "/img/4js.jpg"}]]
+  [:div.row
+    [:h1 "Hunter Sandwich"]
+    [:div.col-md-6
+    [:h3 "Ingredients:"]
+    [:p "Ciabatta"]
+    [:p "White Onion"]
+    [:p "Crimini Mushrooms"]
+    [:p "Butter"]
+    [:p "Thin sliced boneless New York Strip Steak"]]
+    [:div.col-md-6
+    [:h3 "Description:"]
+    [:p "Saute Onions and mushrooms in butter."]
+    [:p "Broil steak to the preferred temperature."]
+    [:p "Slice the Ciabatta length-wise, remove the innards."]
+    [:p "Place the onions, mushroom, and steak in the bread"]
+    [:p "Place the sandwich inside of a vice for several hours."]]]])
 
 (defn about-page []
   [:div.container
