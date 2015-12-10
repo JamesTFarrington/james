@@ -31,7 +31,7 @@
           (select-keys flash [:name :message :errors]))))
 
 (defn home-page []
-  (layout/render "index.html"))
+  (layout/render "home.html"))
 
 (defroutes home-routes
   (GET "/" [] (home-page))

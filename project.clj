@@ -1,7 +1,7 @@
 (defproject james "0.1.0-SNAPSHOT"
 
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "James T Farrington website"
+  :url "http://www.JamesTFarrington.com"
 
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [selmer "0.9.5"]
@@ -34,7 +34,7 @@
                  [org.immutant/web "2.1.1" :exclusions [ch.qos.logback/logback-classic]]]
 
   :min-lein-version "2.0.0"
-  :uberjar-name "james.jar"
+  :uberjar-name "jamestfarrington.jar"
   :jvm-opts ["-server"]
   :resource-paths ["resources" "target/cljsbuild"]
 
